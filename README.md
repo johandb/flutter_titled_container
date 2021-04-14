@@ -4,7 +4,7 @@ Display a title on top of the Container
 
 See the screenshot
 
-
+![](https://github.com/johandb/flutter_titled_container/blob/main/supplement/screenshot.png)
 
 ## Example
 
