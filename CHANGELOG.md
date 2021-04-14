@@ -1,4 +1,4 @@
-## [1.0.0] - April 14, 2021
+## [1.0.1] - April 14, 2021
 
 * Updated the README
 
