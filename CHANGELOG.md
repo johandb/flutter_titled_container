@@ -1,3 +1,8 @@
+## [1.0.2] - April 14, 2021
+
+* Updated the screenshot.
+* Set background color to white in example. 
+
 ## [1.0.1] - April 14, 2021
 
 * Updated the README
