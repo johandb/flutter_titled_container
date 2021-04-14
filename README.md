@@ -1,14 +1,71 @@
 # flutter_titled_container
 
-A titled container with border
+Display a title on top of the Container
 
-## Getting Started
+See the screenshot
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+![](https://github.com/johandb/flutter_titled_container/blob/main/supplement/screenshot.png)
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+## Example
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:flutter_titled_container/flutter_titled_container.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      home: MyHomePage(),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text('Titled Container'),
+      ),
+      body: Center(
+        child: TitledContainer(
+          titleColor: Colors.blue,
+          title: 'Container Title',
+          fontSize: 16.0,
+          child: Container(
+            width: 250.0,
+            height: 200.0,
+            decoration: BoxDecoration(
+              border: Border.all(
+                color: Colors.blue,
+              ),
+              borderRadius: BorderRadius.all(
+                Radius.circular(10.0),
+              ),
+            ),
+            child: Center(
+              child: Text(
+                'Some text',
+                style: TextStyle(fontSize: 28.0),
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+```

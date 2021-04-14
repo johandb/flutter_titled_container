@@ -1,3 +1,8 @@
-## [0.0.1] - TODO: Add release date.
+## [0.0.1] - April 14, 2021
 
-* TODO: Describe initial release.
+* Initial release
+* TitledContainer displays a title on the top of a Container widget. The Container must be
+  a child of the TitledContainer widget.
+* You can set the color, font-size and the title to be displayed
+* This widget uses the childs constraints.
+
