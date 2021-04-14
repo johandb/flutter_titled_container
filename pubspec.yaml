@@ -1,7 +1,6 @@
 name: flutter_titled_container
 description: A titled container with border
-version: 0.0.1
-author: Johan den Boer<johanj.denboer@gmail.com>
+version: 1.0.0
 homepage: https://github.com/johandb/flutter_titled_container
 
 environment:
