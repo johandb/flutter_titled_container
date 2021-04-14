@@ -1,4 +1,4 @@
-## [0.0.1] - April 14, 2021
+## [1.0.0] - April 14, 2021
 
 * Initial release
 * TitledContainer displays a title on the top of a Container widget. The Container must be
