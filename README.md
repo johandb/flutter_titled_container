@@ -1,6 +1,9 @@
 # flutter_titled_container
 
-Display a title on top of the Container
+Display a title on top of the Container.
+
+The widget must have a child container : Container
+You can give it a title, titleColor and fontSize.
 
 See the screenshot
 
