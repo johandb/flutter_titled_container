@@ -7,7 +7,7 @@ You can give it a title, titleColor and fontSize.
 
 See the screenshot
 
-![](https://github.com/johandb/flutter_titled_container/blob/main/supplement/screenshot.png)
+![](https://github.com/johandb/flutter_titled_container/blob/main/supplement/app.png)
 
 ## Example
 
