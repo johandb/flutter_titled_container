@@ -1,3 +1,11 @@
+## [1.0.3] - April 15, 2021
+
+* Added property to set the background color for title
+* Added default values
+  - titleColor      - If this property is omitted it defaults to black
+  - backgroundColor - If this property is omitted it defaults to white
+  - fontSize        - If this property is omitted it default to 14.0sss 
+
 ## [1.0.2] - April 14, 2021
 
 * Updated the screenshot.

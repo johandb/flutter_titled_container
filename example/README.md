@@ -37,6 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
           titleColor: Colors.blue,
           title: 'Container Title',
           fontSize: 16.0,
+          backgroundColor: Colors.white,
           child: Container(
             width: 250.0,
             height: 200.0,

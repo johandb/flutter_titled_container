@@ -6,12 +6,17 @@ class TitledContainer extends SingleChildRenderObjectWidget {
   const TitledContainer({
     Key? key,
     required Widget child,
-    required this.titleColor,
+    titleColor,
     required this.title,
-    required this.fontSize,
-  }) : super(key: key, child: child);
+    fontSize,
+    backgroundColor,
+  })  : fontSize = fontSize ?? 14.0,
+        titleColor = titleColor ?? const Color.fromRGBO(0, 0, 0, 1.0),
+        backgroundColor = backgroundColor ?? const Color.fromRGBO(255, 255, 255, 1.0),
+        super(key: key, child: child);
 
   final Color titleColor;
+  final Color backgroundColor;
   final String title;
   final double fontSize;
 
@@ -21,12 +26,14 @@ class TitledContainer extends SingleChildRenderObjectWidget {
       titleColor: titleColor,
       title: title,
       fontSize: fontSize,
+      backgroundColor: backgroundColor,
     );
   }
 
   @override
   void updateRenderObject(BuildContext context, RenderTitledContainer renderObject) {
     renderObject..titleColor = titleColor;
+    renderObject..backgroundColor = backgroundColor;
     renderObject..title = title;
     renderObject..fontSize = fontSize;
   }
@@ -37,8 +44,10 @@ class RenderTitledContainer extends RenderBox with RenderObjectWithChildMixin<Re
     required Color titleColor,
     required String title,
     required double fontSize,
+    required Color backgroundColor,
   })   : _titleColor = titleColor,
         _title = title,
+        _backgroundColor = backgroundColor,
         _fontSize = fontSize;
 
   Color get titleColor => _titleColor;
@@ -46,6 +55,14 @@ class RenderTitledContainer extends RenderBox with RenderObjectWithChildMixin<Re
   set titleColor(Color value) {
     if (_titleColor == value) return;
     _titleColor = value;
+    markNeedsPaint();
+  }
+
+  Color get backgroundColor => _backgroundColor;
+  Color _backgroundColor;
+  set backgroundColor(Color value) {
+    if (_backgroundColor == value) return;
+    _backgroundColor = value;
     markNeedsPaint();
   }
 
@@ -88,7 +105,8 @@ class RenderTitledContainer extends RenderBox with RenderObjectWithChildMixin<Re
         style: TextStyle(
           color: titleColor,
           fontSize: fontSize,
-          backgroundColor: Color.fromRGBO(255, 255, 255, 1.0),
+          height: 1.0,
+          backgroundColor: backgroundColor,
         ),
       );
       final textPainter = TextPainter(
@@ -99,7 +117,7 @@ class RenderTitledContainer extends RenderBox with RenderObjectWithChildMixin<Re
         minWidth: 0,
         maxWidth: size.width,
       );
-      final titleOffset = Offset(10, -fontSize / 2 - 2);
+      final titleOffset = Offset(10, -fontSize / 2);
       textPainter.paint(canvas, titleOffset);
 
       canvas.restore();

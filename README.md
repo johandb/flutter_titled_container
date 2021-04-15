@@ -3,7 +3,13 @@
 Display a title on top of the Container.
 
 The widget must have a child container : Container
-You can give it a title, titleColor and fontSize.
+
+You can set the following properties
+
+- title           - The text to display 
+- titleColor      - The color (foreground) fors title, default is black
+- fontSize        - The font size for title, default is 14.0
+- backgroundColor - The background color for title, default is white
 
 See the screenshot
 
@@ -48,6 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
           titleColor: Colors.blue,
           title: 'Container Title',
           fontSize: 16.0,
+          backgroundColor: Colors.white,
           child: Container(
             width: 250.0,
             height: 200.0,
