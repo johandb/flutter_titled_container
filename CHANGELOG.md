@@ -1,3 +1,7 @@
+## [1.0.4] - April 15, 2021
+
+* Updated the description in pubspec.yml
+
 ## [1.0.3] - April 15, 2021
 
 * Added property to set the background color for title
