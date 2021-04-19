@@ -4,7 +4,7 @@ Display a title on top of the Container.
 
 The widget must have a child container : Container
 
-You can set the following properties
+You can set the following properties :
 
 - title           - The text to display 
 - titleColor      - The color (foreground) fors title, default is black
