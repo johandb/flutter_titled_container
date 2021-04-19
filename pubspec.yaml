@@ -1,7 +1,6 @@
 name: flutter_titled_container
-description: This widget displayes a title on top of a Container. The container MUST be a child of the TitledContainer widget.
-  You can specify the title, titleColor, fontSize and background color for this to display.
-version: 1.0.4
+description: This widget displayes a title on top of a Container. You can specify the title, titleColor, fontSize and background color for this to display.
+version: 1.0.5
 homepage: https://github.com/johandb/flutter_titled_container
 
 environment:
