@@ -32,8 +32,9 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: TitledContainer(
           titleColor: Colors.blue,
-          title: 'Container Title',
-          fontSize: 16.0,
+          title: 'Center Title',
+          textAlign: TextAlignTitledContainer.Left,
+          fontSize: 14.0,
           backgroundColor: Colors.white,
           child: Container(
             width: 250.0,
@@ -49,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             child: Center(
               child: Text(
-                'Some text',
+                'Center Align text',
                 style: TextStyle(fontSize: 28.0),
               ),
             ),
