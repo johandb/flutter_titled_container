@@ -1,3 +1,7 @@
+## [1.0.7] - May 31, 2021
+
+* Removed prints
+
 ## [1.0.6] - May 31, 2021
 
 * Added text align for title. You can now align text Left, Center or Rigth
