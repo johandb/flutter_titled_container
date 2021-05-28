@@ -1,3 +1,7 @@
+## [1.0.6] - May 31, 2021
+
+* Added text align for title. You can now align text Left, Center or Rigth
+
 ## [1.0.5] - April 19, 2021
 
 * Updated the description in pubspec.yml

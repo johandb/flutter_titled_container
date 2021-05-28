@@ -2,7 +2,7 @@
 
 Display a title on top of the Container.
 
-The widget must have a child container : Container
+The widget works best with a child container : Container
 
 You can set the following properties :
 
@@ -10,10 +10,13 @@ You can set the following properties :
 - titleColor      - The color (foreground) fors title, default is black
 - fontSize        - The font size for title, default is 14.0
 - backgroundColor - The background color for title, default is white
+- textAlign       - The alignment for text. i.e. Lef, Center or Right
 
 See the screenshot
 
 ![](https://github.com/johandb/flutter_titled_container/blob/main/supplement/app.png)
+![](https://github.com/johandb/flutter_titled_container/blob/main/supplement/app-r.png)
+![](https://github.com/johandb/flutter_titled_container/blob/main/supplement/app-l.png)
 
 ## Example
 
@@ -53,6 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: TitledContainer(
           titleColor: Colors.blue,
           title: 'Container Title',
+          textAlign: TextAlignTitledContainer.Center,
           fontSize: 16.0,
           backgroundColor: Colors.white,
           child: Container(
