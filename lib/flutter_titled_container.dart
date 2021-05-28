@@ -137,7 +137,6 @@ class RenderTitledContainer extends RenderBox with RenderObjectWithChildMixin<Re
 
       final TextPainter txtPainter = TextPainter(text: textSpan, textDirection: TextDirection.ltr);
       txtPainter.layout(minWidth: 0, maxWidth: double.infinity);
-      print(txtPainter.size); //the TextSpan width
       double xPos = 10.0;
       switch (textAlign) {
         case TextAlignTitledContainer.Center:
